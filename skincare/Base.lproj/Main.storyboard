@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Mg-Pr-n37">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -21,10 +21,12 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar pesquisa">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.57257612260000001" green="0.5741305967" blue="0.86078912019999998" alpha="0.87487065399999997" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="botaoPressionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dJ-RA-s0l"/>
+                                    <segue destination="60W-5f-GC8" kind="show" id="6Hs-i3-kOe"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="Bzr-jj-MgM">
@@ -41,13 +43,49 @@
                             <constraint firstItem="ErB-MU-iF4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="taA-WK-108"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0Wo-a4-Hkv"/>
                     <connections>
                         <outlet property="botaoIniciarQuiz" destination="ErB-MU-iF4" id="tTj-zi-vHh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-27"/>
+            <point key="canvasLocation" x="1029.7674418604652" y="-27.038626609442062"/>
+        </scene>
+        <!--Questao View Controller-->
+        <scene sceneID="Wia-JC-GyS">
+            <objects>
+                <viewController id="60W-5f-GC8" customClass="QuestaoViewController" customModule="skincare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7r1-6S-zM4">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NSE-PX-ncG"/>
+                        <color key="backgroundColor" red="0.32156862749999998" green="0.1176470588" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ihq-u6-yLB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrr-tl-lzz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x9v-P0-0J9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Mg-Pr-n37" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="56D-TB-BMV">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AUr-fe-TI9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0c-zb-fZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.16279069767441" y="-27.038626609442062"/>
         </scene>
     </scenes>
     <resources>

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
         print("O botao foi pressionado!")
     }
     
-    @IBOutlet weak var botaoIniciarQuiz: UIButton!
+    @IBOutlet weak var botaoIniciarQuiz: UIButton! // aqui passamos o atroibuto do botao para configurar ele no configuraLayout
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     } //toda funcao criada, passar dentro do viewDidLoad
 
     func configuraLayout(){
-        
+        botaoIniciarQuiz.layer.cornerRadius = 12.0 //aqui configuramos um border radius no botao    
     }
 }
 
