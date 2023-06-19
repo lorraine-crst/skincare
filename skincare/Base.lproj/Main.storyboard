@@ -16,13 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErB-MU-iF4">
-                                <rect key="frame" x="144" y="448.66666666666669" width="142" height="35"/>
+                                <rect key="frame" x="129.33333333333331" y="446" width="171.33333333333331" height="40.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar pesquisa">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.57257612260000001" green="0.5741305967" blue="0.86078912019999998" alpha="0.87487065399999997" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="botaoPressionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dJ-RA-s0l"/>
@@ -30,7 +31,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="Bzr-jj-MgM">
-                                <rect key="frame" x="140" y="204.66666666666663" width="150" height="154"/>
+                                <rect key="frame" x="140" y="202" width="150" height="154"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -59,15 +60,70 @@
                     <view key="view" contentMode="scaleToFill" id="7r1-6S-zM4">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo da questao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU8-LW-lV0">
+                                <rect key="frame" x="64" y="215" width="302" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csw-48-8Re">
+                                <rect key="frame" x="64" y="513.33333333333337" width="302" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Enc-uY-Zzg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 03">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctL-4s-rHs">
+                                <rect key="frame" x="64" y="419.33333333333331" width="302" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="x1B-cF-WSb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 02">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki4-y4-1kz">
+                                <rect key="frame" x="64" y="325.33333333333331" width="302" height="62"/>
+                                <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="B0Y-kB-rci"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resposta 01">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NSE-PX-ncG"/>
                         <color key="backgroundColor" red="0.32156862749999998" green="0.1176470588" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ki4-y4-1kz" firstAttribute="top" secondItem="xU8-LW-lV0" secondAttribute="bottom" constant="72" id="EIO-HH-uES"/>
+                            <constraint firstItem="ctL-4s-rHs" firstAttribute="top" secondItem="Ki4-y4-1kz" secondAttribute="bottom" constant="32" id="Gfq-bo-tyY"/>
+                            <constraint firstItem="NSE-PX-ncG" firstAttribute="trailing" secondItem="ctL-4s-rHs" secondAttribute="trailing" constant="64" id="NHZ-S9-gaq"/>
+                            <constraint firstItem="ctL-4s-rHs" firstAttribute="leading" secondItem="NSE-PX-ncG" secondAttribute="leading" constant="64" id="Yi5-fF-z3f"/>
+                            <constraint firstItem="NSE-PX-ncG" firstAttribute="trailing" secondItem="xU8-LW-lV0" secondAttribute="trailing" constant="64" id="aJM-R9-C4a"/>
+                            <constraint firstItem="NSE-PX-ncG" firstAttribute="trailing" secondItem="Csw-48-8Re" secondAttribute="trailing" constant="64" id="bhW-Hb-IcD"/>
+                            <constraint firstItem="Ki4-y4-1kz" firstAttribute="leading" secondItem="NSE-PX-ncG" secondAttribute="leading" constant="64" id="o2J-Zj-0F3"/>
+                            <constraint firstItem="NSE-PX-ncG" firstAttribute="trailing" secondItem="Ki4-y4-1kz" secondAttribute="trailing" constant="64" id="o8y-pV-ddd"/>
+                            <constraint firstItem="xU8-LW-lV0" firstAttribute="leading" secondItem="NSE-PX-ncG" secondAttribute="leading" constant="64" id="tsb-3x-EbM"/>
+                            <constraint firstItem="xU8-LW-lV0" firstAttribute="top" secondItem="NSE-PX-ncG" secondAttribute="top" constant="112" id="upK-0x-mWc"/>
+                            <constraint firstItem="Csw-48-8Re" firstAttribute="top" secondItem="ctL-4s-rHs" secondAttribute="bottom" constant="32" id="vF8-Hu-GzA"/>
+                            <constraint firstItem="Csw-48-8Re" firstAttribute="leading" secondItem="NSE-PX-ncG" secondAttribute="leading" constant="64" id="zwc-6F-LIc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ihq-u6-yLB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrr-tl-lzz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="-27"/>
+            <point key="canvasLocation" x="1791.6279069767443" y="-27.038626609442062"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x9v-P0-0J9">
@@ -88,6 +144,7 @@
             <point key="canvasLocation" x="131.16279069767441" y="-27.038626609442062"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="icon" width="150" height="154"/>
     </resources>
