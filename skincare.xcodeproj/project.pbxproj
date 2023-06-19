@@ -14,6 +14,7 @@
 		F242147C2A3BE508005063F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F242147B2A3BE508005063F9 /* Assets.xcassets */; };
 		F242147F2A3BE508005063F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F242147D2A3BE508005063F9 /* LaunchScreen.storyboard */; };
 		F24214872A3BFB4C005063F9 /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24214862A3BFB4C005063F9 /* QuestaoViewController.swift */; };
+		F24214892A40ADFA005063F9 /* Questao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24214882A40ADFA005063F9 /* Questao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F242147E2A3BE508005063F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F24214802A3BE508005063F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F24214862A3BFB4C005063F9 /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
+		F24214882A40ADFA005063F9 /* Questao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F24214742A3BE507005063F9 /* SceneDelegate.swift */,
 				F24214762A3BE507005063F9 /* ViewController.swift */,
 				F24214862A3BFB4C005063F9 /* QuestaoViewController.swift */,
+				F24214882A40ADFA005063F9 /* Questao.swift */,
 				F24214782A3BE507005063F9 /* Main.storyboard */,
 				F242147B2A3BE508005063F9 /* Assets.xcassets */,
 				F242147D2A3BE508005063F9 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				F24214772A3BE507005063F9 /* ViewController.swift in Sources */,
 				F24214732A3BE507005063F9 /* AppDelegate.swift in Sources */,
 				F24214752A3BE507005063F9 /* SceneDelegate.swift in Sources */,
+				F24214892A40ADFA005063F9 /* Questao.swift in Sources */,
 				F24214872A3BFB4C005063F9 /* QuestaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
