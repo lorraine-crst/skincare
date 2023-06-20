@@ -15,12 +15,8 @@ class QuestaoViewController: UIViewController {
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
         
         
-        let usuarioResposta = questoes[numQuestao].respostaCorreta == sender.tag
-        if usuarioResposta {
-            pontuacao += 1
-            sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1)
-        }
-      
+    sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1)
+        
         
         if numQuestao < questoes.count - 1 {
                     numQuestao += 1
