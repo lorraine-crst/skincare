@@ -47,6 +47,7 @@ class QuestaoViewController: UIViewController {
     @objc func configurarQuestao(){
         tituloQuestaoLabel.text = questoes[numQuestao].titulo
         for botao in botoesRespostas {
+                    botao.backgroundColor = UIColor(red: 116/255, green: 58/255, blue: 255/255, alpha: 1.0)
                     let tituloBotao = questoes[numQuestao].respostas[botao.tag]
                     botao.setTitle(tituloBotao, for: .normal)
                 }
