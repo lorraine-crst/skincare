@@ -20,9 +20,7 @@ class QuestaoViewController: UIViewController {
             pontuacao += 1
             sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1)
         }
-        else {
-            sender.backgroundColor = UIColor(red: 211/255, green: 17/255, blue: 17/255, alpha: 1)
-        }
+      
         
         if numQuestao < questoes.count - 1 {
                     numQuestao += 1
@@ -49,7 +47,6 @@ class QuestaoViewController: UIViewController {
     @objc func configurarQuestao(){
         tituloQuestaoLabel.text = questoes[numQuestao].titulo
         for botao in botoesRespostas {
-                    botao.backgroundColor = UIColor(red: 116/255, green: 58/255, blue: 255/255, alpha: 1.0)
                     let tituloBotao = questoes[numQuestao].respostas[botao.tag]
                     botao.setTitle(tituloBotao, for: .normal)
                 }
