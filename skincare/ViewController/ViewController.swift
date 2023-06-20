@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     } //toda funcao criada, passar dentro do viewDidLoad
 
     func configuraLayout(){
+        navigationItem.hidesBackButton = true
         botaoIniciarQuiz.layer.cornerRadius = 12.0 //aqui configuramos um border radius no botao    
     }
 }

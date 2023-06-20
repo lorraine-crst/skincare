@@ -15,7 +15,7 @@ struct Questao{
 
 let questoes: [Questao] = [
 Questao(titulo: "Oleosidade", respostas: ["Oleosa", "Seca", "Nao sei"], respostaCorreta: 2),
-Questao(titulo: "Sensibilidade", respostas: ["Sim", "Nao", "Nao sei"], respostaCorreta: 3),
+Questao(titulo: "Sensibilidade", respostas: ["Sim", "Nao", "Nao sei"], respostaCorreta: 0),
 Questao(titulo: "Pigmentacao", respostas: ["Sim", "Nao", "Nao sei"], respostaCorreta: 1),
 Questao(titulo: "Propensao para formar rugas", respostas: ["Sim", "Nao", "Nao sei"], respostaCorreta: 2)
 ]
