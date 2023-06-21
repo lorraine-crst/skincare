@@ -10,13 +10,21 @@ import UIKit
 class QuestaoViewController: UIViewController {
     var pontuacao = 0
     var numQuestao = 0
+    var usuarioRespostas: [String] = []
     
     @IBOutlet weak var tituloQuestaoLabel: UILabel!
     
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
-        let usuarioResposta = questoes[numQuestao].respostaCorreta == sender.tag
+        sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1)
         
-    sender.backgroundColor = UIColor(red: 11/255, green: 161/255, blue: 53/255, alpha: 1)
+        usuarioRespostas.append(questoes[numQuestao].respostas[sender.tag])
+        print(usuarioRespostas)
+        
+        func usuarioResposta(){
+            if usuarioRespostas == ["oleosa", "nao", "nao sei", "nao"]{
+                print("teste")
+            }
+        }
         
         if numQuestao < questoes.count - 1 {
                     numQuestao += 1

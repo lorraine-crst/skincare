@@ -230,6 +230,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="We7-JU-Nf7"/>
         <segue reference="l2a-Bg-XwH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

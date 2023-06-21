@@ -17,6 +17,8 @@ class ResultadoViewController: UIViewController {
     
     @IBOutlet weak var botaoRefazer: UIButton!
     
+    
+    
     func configurarLayout(){
         botaoRefazer.layer.cornerRadius = 12.0
         navigationItem.hidesBackButton = true
